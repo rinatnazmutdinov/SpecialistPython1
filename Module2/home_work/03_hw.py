@@ -29,3 +29,13 @@
 # 20 199.80 Rub.
 
 # TODO: your code here
+
+item_price = float(input("Введите цену товара:"))
+i = 1
+S = item_price
+
+while i < 20:
+    S += item_price
+    i += 1
+    formatted_float = "{:.2f}".format(S)
+    print(S, 'rub')
