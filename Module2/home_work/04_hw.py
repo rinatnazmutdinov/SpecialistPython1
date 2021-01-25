@@ -14,3 +14,15 @@
 #    #
 #    #
 ######
+
+n = int(input("Введите длину стороны квадрата:"))
+if 2 < n <= 30:
+    i = 0
+    dl = '#'
+    space = ' ' * (n-2)
+    while i < n:
+        if i == 0 or i == n - 1:
+            print(dl * n)
+        else:
+            print(dl + space + dl)
+        i += 1
